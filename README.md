@@ -64,6 +64,28 @@ for f in range(nb_frames):
 
 Just like that we have our agent interacting with our game environment.
 
+
+## Using the gym wrapper
+```python
+
+from ple import gym_ple
+import gym
+
+env = gym.make("Snake-v0")
+obs = env.reset()
+
+nb_frames = 1000
+reward = 0.0
+done = False
+
+for f in range(nb_frames):
+    if done:
+        obs = env.reset()
+    action = myAgent.pickAction(reward, obs)
+    obs, reward, done, _ = env.step(0)
+    
+```
+
 ## Installation
 
 PLE requires the following dependencies:
