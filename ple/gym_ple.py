@@ -78,7 +78,7 @@ class PLEEnv(gym.Env):
         
 from gym.envs.registration import register
 for game in ['originalGame','nosemantics','noobject','nosimilarity','noaffordance','continualgame',
-             'Catcher',  'FlappyBird','FlappyBirdNight','FlappyBirdDay', 'Pixelcopter', 'PuckWorld','RaycastMaze', 'Snake', 'WaterWorld']:
+             'Catcher',  'FlappyBird','FlappyBirdNight','FlappyBirdSameNight','FlappyBirdDay', 'Pixelcopter', 'PuckWorld','RaycastMaze', 'Snake', 'WaterWorld']:
     nondeterministic = False
     register(
         id='{}-v0'.format(game),
